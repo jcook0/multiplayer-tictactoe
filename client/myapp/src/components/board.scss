@@ -1,0 +1,19 @@
+
+
+
+.board {
+    margin: 0;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+
+    .box {
+        border: 1px solid black;
+        height: 100px;
+        font-size: 70px;
+        text-align: center;
+
+    }
+
+
+}
