@@ -1,1 +1,1 @@
-# multiplayer-tictactoe
+# Multiplayer Tic-Tac-Toe
