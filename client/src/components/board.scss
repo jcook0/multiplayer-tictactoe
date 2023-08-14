@@ -1,0 +1,21 @@
+.board {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    padding: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../assets/board.png");
+
+    .square {
+        //border: 1px solid black;
+        height: 100px;
+        display: flex;
+        justify-content: center;  /* Horizontally center the content */
+        align-items: center;      /* Vertically center the content */
+        font-family: cursive, sans-serif;
+        font-size: 70px;
+        text-align: center;
+    }
+}
+
