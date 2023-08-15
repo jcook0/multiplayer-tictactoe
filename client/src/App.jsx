@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { socket } from './socket';
 import Home from './pages/Home';
 import Game from './pages/Game';
+import NotFound from './pages/NotFound';
 import './App.scss';
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
   const [symbol, setSymbol] = useState('X');
   const [board, setBoard] = useState(new Array(9).fill(""))
   const [gameStarted, setGameStarted] = useState(false)
-  const [gameMessage, setGameMessage] = useState("Waiting for opponent to join..");
+  const [gameMessage, setGameMessage] = useState("Waiting for opponent to join room..");
 
   useEffect(() => {
 
@@ -54,6 +55,7 @@ export default function App() {
       <div className="main">
         <Router>
           <Routes>
+            <Route path="*" element={<NotFound/>} />
             <Route exact path='/' element={<Home />} />
             <Route exact path='/game' element={<Game s={symbol} board={board} gameStarted={gameStarted} setBoard={setBoard} roomCode={roomCode} gameMessage={gameMessage} />} />
           </Routes>

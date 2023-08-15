@@ -21,8 +21,7 @@ const Home = () => {
   }
 
   return (
-    <div className="container-bg m-8">
-
+    <div className="container-lg m-8">
       <button type="button" className="rounded-lg m-4 bg-green-600 px-7 py-4 text-2xl font-bold leading-6 text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600" onClick={handleClick}>Play</button>
       <br></br>
       <input type="text" size="10" className="roomCode mt-4 mr-3 px-4 py-2 border rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Room Code"></input>
