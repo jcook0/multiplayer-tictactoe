@@ -4,4 +4,4 @@ The frontend is built with ReactJS and Tailwind CSS. Web client-server communica
 
 
 ## Live Demo
-http://ec2-3-80-200-71.compute-1.amazonaws.com:8080/
+([EC2 Instance](http://ec2-3-80-200-71.compute-1.amazonaws.com:8080/))
